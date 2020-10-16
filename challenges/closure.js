@@ -16,9 +16,21 @@ function myFunction() {
 }
 myFunction();
 
-// Explanation: 
+// Explanation: Because of function scope, the variable internal is inside of the parent function of myFunction so it can access the variables inside of its parent function. 
+// It could not go from child function to parent function though
+
+
 
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+function sumnation(num) {
+  let sum = 0;
+  for(let i = 1;i<=num;i++) {
+    sum += i;
+  }
+    return sum;
+ }
+
+ console.log(sumnation(5))
